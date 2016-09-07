@@ -1,0 +1,40 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/event"/>
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tweet"
+            android:id="@+id/tweet"
+            android:layout_gravity="right"
+            android:onClick="onClickTweet" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="342dp"
+            android:layout_height="461dp" android:id="@+id/map" tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </LinearLayout>
+</LinearLayout>
